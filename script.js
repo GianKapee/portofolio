@@ -1,0 +1,1 @@
+console.log("Gian Kurnia Putra Portfolio Loaded");
