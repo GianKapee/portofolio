@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1220;
+    color: white;
+    line-height: 1.7;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: #0b1220;
+    border-bottom: 1px solid #26344d;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+}
+
+nav h2 {
+    color: #6ea8fe;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #6ea8fe;
+}
+
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 20px;
+}
+
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 800px;
+}
+
+.hero-text > p:first-child {
+    color: #6ea8fe;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 70px;
+    margin: 15px 0;
+}
+
+.hero h2 {
+    color: #aebbd0;
+    margin-bottom: 25px;
+}
+
+.hero p {
+    color: #aebbd0;
+    font-size: 18px;
+}
+
+.button {
+    display: inline-block;
+
+    margin-top: 30px;
+    padding: 13px 25px;
+
+    background: white;
+    color: #0b1220;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 8px;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+section h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+section p {
+    color: #aebbd0;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #111c2e;
+    border: 1px solid #26344d;
+
+    padding: 30px;
+    margin-bottom: 20px;
+
+    border-radius: 15px;
+}
+
+.card h3 {
+    font-size: 25px;
+    color: #6ea8fe;
+    margin-bottom: 15px;
+}
+
+.card h4 {
+    margin-top: 20px;
+}
+
+.card li {
+    color: #aebbd0;
+    margin: 10px 0;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills span {
+    border: 1px solid #34445d;
+
+    padding: 10px 16px;
+
+    border-radius: 50px;
+
+    color: #c5d1e1;
+}
+
+footer {
+    text-align: center;
+
+    padding: 40px;
+
+    border-top: 1px solid #26344d;
+
+    color: #75869e;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    section {
+        padding: 70px 20px;
+    }
+
+}
